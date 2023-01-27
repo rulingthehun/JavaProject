@@ -1,0 +1,19 @@
+Acess Modifiers (Erisim belirtecleri)
+public, private, protected, defualt (bir sey yazilmayan)
+
+Erisim Alanlari
+1- Class icinden erisim
+2- Paketin icinden erisim
+3- Projenin icinden erisim
+
+public: Projenin her tarafindan yani, diger tum paketlerden erisilebilir.
+        Class, method (constructor), field
+
+default: (friendly) bir belirtec yazlimazsa, sadece bulundugu pakettekiler erisebilir.
+       Class, method, field
+
+private: Sadece classin icindekiler erisebilir.
+       Method, field
+
+protected: default gibi calisir, bir secenekte diger klasorlerden de erisilebilir.
+        2, 3 konu sonra anlatilacak
