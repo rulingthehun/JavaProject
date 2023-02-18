@@ -14,8 +14,22 @@ public class _01_Java2DArrays {
         ders1Notlari[0] = 80; //tek boyutlu dizide ilk elemana 80 atandi
         tumDersNOtlari[0][0] = 80; //2 boyutlu dizide ilk satirin ilk sutununa 80 atandi
 
-        System.out.println("tumDersNOtlari = " + tumDersNOtlari[0][0]);
+        System.out.println("ilk ders - ilk öğrenci = " + tumDersNOtlari[0][0]);
         Scanner oku = new Scanner(System.in);
-        tumDersNOtlari[0][0] = oku.nextInt();
+
+        boolean correct = true;
+        do {
+            System.out.print("ikinci ders - 36. öğrenci notunu gir (0-100)=≥ ");
+            int not = oku.nextInt();
+            if (0 <= not && not <= 100) {
+                tumDersNOtlari[1][35] = not;
+                System.out.println("ikinci ders - 36. öğrenci = " + tumDersNOtlari[1][35]);
+                correct = true;
+            } else {
+                System.out.println("Hatalı not girişi");
+                correct = false;
+            }
+        } while (!correct);
+
     }
 }
